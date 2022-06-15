@@ -34,9 +34,46 @@ function buildTable(data){
             let cell = row.append("td");
             // add the values after the appended data placed into table data tag
             cell.text(val);
-
         });
+// use d3 system to let user click a button for filtering
+function handleClick(data){
+    // .select to select first element that matches datetime id within the tags
+    // chained .property val to select function to look for date values
+    // ... stored on webpage, and grab that info, hold in "date" var
+    let date = d3.select("#datetime").property("value");
+    // take tableData as oringinal data imported from data.js
+    // created a var to our raw data to have blank slate 
+    // run each time filter button is clicked, if no date entered
+    // ... then all data returned instead 
+    let filteredData = tableData;
 
+    if (date){
+        // we take filteredData, a new var since we used let above
+        // and we apply a filter to match datetime value to filtered date value
+        filteredData = filteredData.filter
+        // .filter method line applies filter to table data\
+        // show only row where the date = date filter 
+        (row => row.datetime=== date);
+
+        // call our function to build table from above
+        //rebuilds the table using the filtered data
+        // if no date, then filterdata will be original tableData
+        buildTable(filteredData);
+
+        // Attach an event to listen for the form button
+        // tells us when click occurs
+        // filterbtn is the selector, contains id for html tag
+        //.on tells d3 to execute the handleClick function 
+        // when id === filter-btn clicked
+        d3.selectAll("#filter-btn").on("click", handleClick);
+
+        // Build the table when the page loads
+        // creates a basic table with rows of unfiltered data
+        buildTable(tableData);
+    };
+
+
+}
 
         
     });
