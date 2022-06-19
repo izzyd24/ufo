@@ -21,10 +21,11 @@ We wanted to create the a table and date search (pre-challenge information):
 ## Scripts In Action: 
 ### Pre-Challenge:
 Here is the script for HTML builds: 
-
+image.png
 Here is the script for referencing the js data in data.js, and using functions to create the table with the columns mentioned above: 
-
+image.png
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
+image.png
 
 ### Challenge:
 Upon modifiying the index.html file, here is the expected output: 
