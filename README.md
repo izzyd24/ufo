@@ -25,9 +25,12 @@ Here is the script for HTML builds:
 Here is the script for referencing the js data in data.js, and using functions to create the table with the columns mentioned above: 
 
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
+
 ### Challenge:
 Upon modifiying the index.html file, here is the expected output: 
 ![image](https://user-images.githubusercontent.com/102266450/174499753-010327cf-8e5c-4927-899a-8a03889abda6.png)
+Using Js, we replcaed the handleCLick() function in app.js with clickySwitch() function to save the element, value, and id of the filter that was changed. 
+We also created a new function, loopyData() to loop through the dataset and keep the results that match the search criteria only. 
 
 ## Results:
 There is a description of how to perform a search, with images
