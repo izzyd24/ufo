@@ -24,13 +24,18 @@ function buildTable(data) {
 }
 
 // 1. Create a variable to keep track of all the filters as an object.
+// will store ID + value entered from user input for step 5
+filters = {};
 
 
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-
+    // from handleClick()
+    // const date = d3.select("#datetime").property("value");
+    // let filteredData = tableData;
+    
     // 4b. Save the value that was changed as a variable.
 
     // 4c. Save the id of the filter that was changed as a variable.
