@@ -27,17 +27,21 @@ function buildTable(data) {
 // will store ID + value entered from user input for step 5
 var filters = {};
 
+const shapeFilter = d3.select("#shape").property("value").attr("id");
+console.log(shapeFilter)
+
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
     // 4a-c. save the value, id, and element changed
     // refactored largely from handleClick() in app_1.js
     // others have used filters.datetime = in place of a var call?
+    
     const datetimeFilter = d3.select("#datetime").property("value").toLowerCase();
     const cityFilter = d3.select("#city").property("value").toLowerCase();
     const stateFilter = d3.select("#state").property("value").toLowerCase();
     const countryFilter = d3.select("#country").property("value").toLowerCase();
-    const shapeFilter = d3.select("#shape").property("value").toLowerCase();
+    const shapeFilter = d3.select("#shape").property("value").attr("id");
 
     // 5. If a filter value was entered... then 
     // add that filterId and value to the filters list. 
