@@ -12,7 +12,7 @@ Prior to working through the logic of our scripts, we created the following stor
 ![image](https://user-images.githubusercontent.com/102266450/174499104-6c5c2f72-4478-4b01-9f67-d2ddbc802f8d.png)
 
 ## Scripts Requirements:
-We wanted to create the a table and date search (pre-challenge):
+We wanted to create the a table and date search (pre-challenge information):
 1. Create a custom HTML web page
 2. Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to the web page and then adds new rows of data for each UFO sighting
 3. Make sure there are columns for date/time, city, state, country, shape, and comment at the very least
