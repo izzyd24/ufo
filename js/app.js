@@ -27,11 +27,10 @@ function buildTable(data) {
 // will store ID + value entered from user input for step 5
 var filters = {};
 
-
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
-    // 4a-csave the value, id, and element changed
+    // 4a-c. save the value, id, and element changed
     // refactored largely from handleClick() in app_1.js
     // others have used filters.datetime = in place of a var call?
     const datetimeFilter=d3.select("#datetime").property("value").toLowerCase();
@@ -47,6 +46,19 @@ function updateFilters() {
     // https://stackoverflow.com/questions/25421233/javascript-removing-undefined-fields-from-an-object
     Object.keys(filters).forEach(key => filters[key] === "" ? delete filters[key] : {});
   
+    // OR via module suggestion 4a-c; example for datetime param
+    let changedElement = d3.select("#datetime");
+    let elementValue = changedElement.property("#datetime");
+    console.log(elementValue)
+    let filterId = changedElement.attr("id");
+
+    if (elementValue) {
+      filters[filterId] = elementValue;
+    }
+    else {
+      delete filters[filterId]
+    }
+    
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
   }
@@ -55,7 +67,7 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
-    
+    let filteredData = tableData; 
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
