@@ -19,11 +19,13 @@ We wanted to create the a table and date search (pre-challenge):
 4. Use a date form in the HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input
 
 ## Scripts In Action: 
+### Pre-Challenge:
 Here is the script for HTML builds: 
 
 Here is the script for referencing the js data in data.js, and using functions to create the table with the columns mentioned above: 
 
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
+### Challenge:
 
 ## Results:
 There is a description of how to perform a search, with images
