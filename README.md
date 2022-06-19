@@ -26,6 +26,8 @@ Here is the script for referencing the js data in data.js, and using functions t
 
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
 ### Challenge:
+Upon modifiying the index.html file, here is the expected output: 
+![image](https://user-images.githubusercontent.com/102266450/174499753-010327cf-8e5c-4927-899a-8a03889abda6.png)
 
 ## Results:
 There is a description of how to perform a search, with images
