@@ -25,29 +25,30 @@ function buildTable(data) {
 
 // 1. Create a variable to keep track of all the filters as an object.
 // will store ID + value entered from user input for step 5
-filters = {};
+var filters = {};
 
 
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
-    // 4a. Save the element that was changed as a variable.
-    // from handleClick()
-    // const date = d3.select("#datetime").property("value");
-    // let filteredData = tableData;
-    
-    // 4b. Save the value that was changed as a variable.
+    // 4a-csave the value, id, and element changed
+    // refactored largely from handleClick() in app_1.js
+    // others have used filters.datetime = in place of a var call?
+    const datetimeFilter=d3.select("#datetime").property("value").toLowerCase();
+    const cityFilter=d3.select("#city").property("value").toLowerCase();
+    const stateFilter=d3.select("#state").property("value").toLowerCase();
+    const countryFilter=d3.select("#country").property("value").toLowerCase();
+    const shapeFilter=d3.select("#shape").property("value").toLowerCase();
 
-    // 4c. Save the id of the filter that was changed as a variable.
-
-  
-    // 5. If a filter value was entered then add that filterId and value
-    // to the filters list. Otherwise, clear that filter from the filters object.
- 
+    // 5. If a filter value was entered... then 
+    // add that filterId and value to the filters list. 
+    // Otherwise, clear that filter from the filters object.
+    // documentation help:
+    // https://stackoverflow.com/questions/25421233/javascript-removing-undefined-fields-from-an-object
+    Object.keys(filters).forEach(key => filters[key] === "" ? delete filters[key] : {});
   
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
-  
   }
   
   // 7. Use this function to filter the table when data is entered.
