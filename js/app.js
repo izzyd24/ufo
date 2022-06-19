@@ -46,10 +46,13 @@ function updateFilters() {
     // https://stackoverflow.com/questions/25421233/javascript-removing-undefined-fields-from-an-object
     Object.keys(filters).forEach(key => filters[key] === "" ? delete filters[key] : {});
   
-    // OR via module suggestion 4a-c; example for datetime param
-    let changedElement = d3.select("#datetime");
-    let elementValue = changedElement.property("#datetime");
+    // OR via module suggestion 4a-c
+    // 4a
+    let changedElement = d3.select(this);
+    // 4b
+    let elementValue = changedElement.property("value");
     console.log(elementValue)
+    // 4c 
     let filterId = changedElement.attr("id");
 
     if (elementValue) {
@@ -58,6 +61,7 @@ function updateFilters() {
     else {
       delete filters[filterId]
     }
+
     
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
