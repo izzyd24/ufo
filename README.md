@@ -32,6 +32,11 @@ Upon modifiying the index.html file, here is the expected output:
 ![image](https://user-images.githubusercontent.com/102266450/174499753-010327cf-8e5c-4927-899a-8a03889abda6.png)
 Using Js, we replcaed the handleCLick() function in app.js with clickySwitch() function to save the element, value, and id of the filter that was changed. 
 We also created a new function, loopyData() to loop through the dataset and keep the results that match the search criteria only. 
+#### Issues:
+Initially, issues came from the 4a-c steps. 
+I had to decide how to use the d3.select function for each unique category of filter. 
+I tried both as a variable for each, and as an if-else: 
+PLACE IMAGE HERE. 
 
 ## Results:
 There is a description of how to perform a search, with images
