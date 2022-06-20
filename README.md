@@ -38,7 +38,10 @@ We also created a new function, loopyData() to loop through the dataset and keep
 Initially, issues came from the 4a-c steps. 
 I had to decide how to use the d3.select function for each unique category of filter. 
 I tried both as a variable for each, and as an if-else: 
-PLACE IMAGE HERE. 
+![step 4a-c issues](https://user-images.githubusercontent.com/102266450/174505733-0446de81-1e9a-4648-ad5a-b4ad309835d8.png)
+Fixed by doing the following: 
+![image](https://user-images.githubusercontent.com/102266450/174505754-a929afe9-d7b0-449f-940b-36cd2559d874.png)
+![image](https://user-images.githubusercontent.com/102266450/174505768-5d3b49f6-0cf5-426d-92f7-fd5678a98e89.png)
 
 ## Results:
 There is a description of how to perform a search, with images
