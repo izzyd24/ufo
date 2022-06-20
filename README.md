@@ -29,7 +29,7 @@ Here is the script for referencing the js data in data.js, and using functions t
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
 ![image](https://user-images.githubusercontent.com/102266450/174505691-28481e29-9f72-4083-a4e1-dbf680c884f2.png)
 
-### Challenge:
+### Challenge and Results:
 Upon modifiying the index.html file, here is the expected output: 
 ![image](https://user-images.githubusercontent.com/102266450/174499753-010327cf-8e5c-4927-899a-8a03889abda6.png)
 Using Js, we replcaed the handleCLick() function in app.js with clickySwitch() function to save the element, value, and id of the filter that was changed. 
@@ -43,9 +43,9 @@ Fixed by doing the following:
 ![image](https://user-images.githubusercontent.com/102266450/174505754-a929afe9-d7b0-449f-940b-36cd2559d874.png)
 ![image](https://user-images.githubusercontent.com/102266450/174505768-5d3b49f6-0cf5-426d-92f7-fd5678a98e89.png)
 
-## Results:
-There is a description of how to perform a search, with images
-
 ## Summary:
-The summary addresses one drawback of this webpage
-The summary addresses two additional recommendations for further development
+One drawback I saw was... 
+I recommend: 
+1. X
+2. Z
+
