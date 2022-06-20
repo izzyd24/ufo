@@ -43,6 +43,13 @@ Fixed by doing the following:
 ![image](https://user-images.githubusercontent.com/102266450/174505754-a929afe9-d7b0-449f-940b-36cd2559d874.png)
 ![image](https://user-images.githubusercontent.com/102266450/174505768-5d3b49f6-0cf5-426d-92f7-fd5678a98e89.png)
 
+#### Step 7-10
+![image](https://user-images.githubusercontent.com/102266450/174505925-be0befa3-4b12-4615-b2a1-e5add6a98e44.png)
+Above, we see the script for the function filterTable. 
+This function sets a variable to our tableData from early in the sheet. It then uses the object.entries documentation to bring our filters and keep data that exactly matches those values. 
+In step 10, we see a reference to the buildTable function, passing our filteredData variable. 
+Finally, we use the d3.selectAll method to "listen" to our events, while loading the page at the bottom. 
+
 ## Summary:
 One drawback I saw was... 
 I recommend: 
