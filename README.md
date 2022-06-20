@@ -51,8 +51,9 @@ In step 10, we see a reference to the buildTable function, passing our filteredD
 Finally, we use the d3.selectAll method to "listen" to our events, while loading the page at the bottom. 
 
 ## Summary:
-One drawback I saw was... 
-I recommend: 
-1. X
-2. Z
+### Drawback: 
+One drawback I saw was how limiting the filters can be when one category is off. At the very least, it requires the user to be knowledge of a couple categories at once. Oddly enough, the pre-challenge webpage seemed to run with less issues and is more user-friendly. (less filters needed)
+### Quick Recommendations:
+1. Either drop filters, such as "shape" that are not common to most users understanding OR expanding a paragraph section describing each filter and its sample inputs.
+2. Change enter date filter to a date range, that is more forgiving. Ideally, a "slider" in place of the typed out input would be appealing for the user. 
 
