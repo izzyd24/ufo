@@ -21,11 +21,13 @@ We wanted to create the a table and date search (pre-challenge information):
 ## Scripts In Action: 
 ### Pre-Challenge:
 Here is the script for HTML builds: 
-image.png
+![image](https://user-images.githubusercontent.com/102266450/174505706-37bff75d-e7e2-4ac4-a4e8-ff25ffb4c449.png)
+
 Here is the script for referencing the js data in data.js, and using functions to create the table with the columns mentioned above: 
-image.png
+![image](https://user-images.githubusercontent.com/102266450/174505694-edda32b6-3fcc-4d98-b79d-70092aa3159c.png)
+
 Lastly, here is the script to "listen" for events, and search through the date/time column to match user input: 
-image.png
+![image](https://user-images.githubusercontent.com/102266450/174505691-28481e29-9f72-4083-a4e1-dbf680c884f2.png)
 
 ### Challenge:
 Upon modifiying the index.html file, here is the expected output: 
